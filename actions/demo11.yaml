@@ -1,0 +1,45 @@
+---
+name: "demo11"
+pack: "vmpack"
+runner_type: "python-script"
+description: "To create a vm instance using the python script"
+enabled: true
+entry_point: "demo11.py"
+parameters:
+    	subscription_id:
+        	type: "string"
+        	description: "the subscription id of the user"
+        	required: true
+        	position: 0
+	
+	group_name:
+		type: "string"
+		description: "The name of the group"
+		required: true
+		position: 1
+	location:
+		type: "string"
+		description:"The location of the user"
+		required: true
+		position: 2
+	vmname:
+		type: "string"
+		description:"The name of the vm instance"
+		required: true
+		position: 3
+	client_id:
+		type: "string"
+		description: "the ID of the client is required"
+		required: true
+		position: 4
+	secret:
+		type: "string"
+		description: "The secret key is required for deploying"
+		required: true
+		position: 5
+	tenant_id:
+		type: "string"
+		description: "The id of the tenant is required"
+		required: true
+		position: 6
+		
